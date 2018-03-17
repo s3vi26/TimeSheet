@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Employee Time Sheet</title>
+</head>
+<body>
+    <div class="jumbotron bg-dark text-white">
+        <div class="container">
+          <h1 class="display-4 center">Employee Data Management</h1>
+          <p class="lead">A Comprehensive Directory of Employee Hours</p>
+        </div>
+    </div>  
+    <div class="container">
+        <table class="table" id="employeeTable">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Employee Name</th>
+                <th scope="col">Role</th>
+                <th scope="col">Start Date</th>
+                <th scope="col">Months Worked</th>
+                <th scope="col">Monthly Rate($)</th>
+                <th scope="col">Total Billed($)</th>
+            </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+        </table>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="card center" style="width: 100rem;">
+                <form>
+                    <div class="card-header bg-dark text-white">
+                    Add Employee
+                    </div>
+                    <div class="form-group">
+                        <label for="employeeNameInput">Employee Name</label>
+                        <input type="text" class="form-control" id="employeeNameInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="roleInput">Role</label>
+                        <input type="text" class="form-control" id="roleInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="startInput">Start Date (MM/DD/YY)</label>
+                        <input type="text" class="form-control" id="startInput">
+                    </div>
+                    <div class="form-group">
+                        <label for="rateInput">Monthly Rate</label>
+                        <input type="text" class="form-control" id="rateInput">
+                    </div>
+                    <button type="submit" class="btn btn-dark" id="addEmployeeBtn">Submit</button>
+                </form>
+            </div>  
+        </div>
+    </div>
+
+
+
+
+
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
